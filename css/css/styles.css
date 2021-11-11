@@ -1,0 +1,19 @@
+body {
+  border: 1px solid pink;
+}
+
+p {
+  color: skyblue;
+  font-weight: bold;
+  line-height: 2em;
+  /* line-height: 2; */
+
+}
+
+h1 {
+  border: inherit;
+  text-align: center;
+  font-weight: normal;
+  /* text-decoration: line-through; */
+  font-family: cursive, 'Courier New', Courier, monospace, serif;
+}
