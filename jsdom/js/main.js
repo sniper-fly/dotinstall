@@ -6,7 +6,13 @@
         document.querySelectorAll('p').forEach((p, index) => {
             p.textContent = `${index}番目のpです`
         });
+        const target = document.getElementById('target');
+
+        target.title = 'this is title';
+        target.style.color = 'red';
+        target.style.backgroundColor = 'black';
     }
 
-    setTimeout(update, 1000);
+    document.querySelector('button').addEventListener('click', update);
+
 }
