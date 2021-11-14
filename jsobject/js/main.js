@@ -46,3 +46,11 @@
     const updated_prices = prices.map(price => price + 20);
     updated_prices.forEach(e => console.log(e));
 }
+
+{
+    // alert('hello');
+    // const answer = confirm('hoge');
+    // if (answer) {
+    //     console.log('yes!!');
+    // }
+}
