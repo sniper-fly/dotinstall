@@ -14,4 +14,22 @@
 
     console.log('------------');
     console.log(sum(...hoge));
+
+    console.log('------------');
+    // 分割代入
+    const arr = [1, 2, 3, 4];
+    const [a, b, c, d] = arr;
+    console.log(a);
+    console.log(d);
+
+    // レスト構文
+    const [e, f, ...other_ele] = arr;
+    console.log(other_ele);
+
+    // 値の交換
+    let x = 1;
+    let y = 10;
+    [x, y] = [y, x];
+    console.log(x);
+    console.log(y);
 }
