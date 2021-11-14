@@ -33,3 +33,16 @@
     console.log(x);
     console.log(y);
 }
+
+{
+    console.log('-------------');
+    const scores = [10, 20, 30, 40];
+    scores.forEach(e => console.log(e));
+}
+
+{
+    console.log('-------------');
+    const prices = [180, 190, 200];
+    const updated_prices = prices.map(price => price + 20);
+    updated_prices.forEach(e => console.log(e));
+}
