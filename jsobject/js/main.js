@@ -65,5 +65,10 @@
         }
     }
 
-    const intervalId = setInterval(showTime, 1000);
+    // const intervalId = setInterval(showTime, 1000);
+    setTimeout(showTime, 5000);
+}
+
+{
+    
 }
