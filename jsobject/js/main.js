@@ -70,5 +70,20 @@
 }
 
 {
-    
+    // text, likeCount変数を持ち、showメソッドでmsgを表示できるクラスPostを作る
+    //
+
+    class Post {
+        constructor(text) {
+            this.text = text;
+            this.likeCount = 0;
+        }
+
+        show() {
+            console.log(`${this.text}: good ${this.likeCount}`);
+        }
+    }
+
+    const hoge = [new Post('hoge'), new Post('heyhey')];
+    hoge.forEach(e => e.show());
 }
