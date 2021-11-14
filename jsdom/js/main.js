@@ -9,8 +9,8 @@
         const target = document.getElementById('target');
 
         target.title = 'this is title';
-        target.style.color = 'red';
-        target.style.backgroundColor = 'black';
+        target.className = 'my-color';
+
     }
 
     document.querySelector('button').addEventListener('click', update);
