@@ -86,4 +86,21 @@
 
     const hoge = [new Post('hoge'), new Post('heyhey')];
     hoge.forEach(e => e.show());
+
+
+    console.log("-------------------");
+    class SponsoredPost extends Post {
+        constructor(text, sponsor) {
+            super(text);
+            this.sponsor = sponsor;
+        }
+
+        show() {
+            super.show();
+            console.log(`sponsored by ${this.sponsor}`);
+        }
+    }
+
+    const sppost = new SponsoredPost('spon', '42tokyo');
+    sppost.show();
 }
