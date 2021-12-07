@@ -49,20 +49,32 @@
         // const insertNode = document.querySelector('ul');
         // insertNode.appendChild(li);
 
-        const radio_button = document.querySelectorAll('input');
-        let selected_color;
-        radio_button.forEach(e => {
-            if (e.checked) {
-                selected_color = e.value;
-            }
-        })
-        const li = document.createElement('li');
-        li.textContent = selected_color;
+        // const radio_button = document.querySelectorAll('input');
+        // let selected_color;
+        // radio_button.forEach(e => {
+        //     if (e.checked) {
+        //         selected_color = e.value;
+        //     }
+        // })
+        // const li = document.createElement('li');
+        // li.textContent = selected_color;
 
-        const insertNode = document.querySelector('ul');
-        insertNode.appendChild(li);
+        // const insertNode = document.querySelector('ul');
+        // insertNode.appendChild(li);
     }
 
-    document.querySelector('button').addEventListener('click', update);
+    // document.querySelector('button').addEventListener('click', update);
 
+    document.querySelector('button').addEventListener('dblclick', () => {
+        console.log("double clicked!");
+    });
+
+    // document.addEventListener('mousemove', e => {
+    //     // console.log("moved");
+    //     console.log(e.clientX, e.clientY);
+    // })
+
+    document.addEventListener('keydown', e => {
+        console.log(e.key);
+    })
 }
