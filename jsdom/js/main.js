@@ -42,9 +42,22 @@
         // input.value = '';
         // insertNode.focus();
 
-        const color = document.querySelector('select');
+        // const color = document.querySelector('select');
+        // const li = document.createElement('li');
+        // li.textContent = `${color.value} : ${color.selectedIndex}`
+
+        // const insertNode = document.querySelector('ul');
+        // insertNode.appendChild(li);
+
+        const radio_button = document.querySelectorAll('input');
+        let selected_color;
+        radio_button.forEach(e => {
+            if (e.checked) {
+                selected_color = e.value;
+            }
+        })
         const li = document.createElement('li');
-        li.textContent = `${color.value} : ${color.selectedIndex}`
+        li.textContent = selected_color;
 
         const insertNode = document.querySelector('ul');
         insertNode.appendChild(li);
