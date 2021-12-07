@@ -11,11 +11,14 @@
         target.title = 'this is title';
         // target.className = 'my-color';
         // target.classList.add('my-border');
-        if (target.classList.contains('my-color') === true) {
-            target.classList.remove('my-color');
-        } else {
-            target.classList.add('my-color');
-        }
+
+        // if (target.classList.contains('my-color') === true) {
+        //     target.classList.remove('my-color');
+        // } else {
+        //     target.classList.add('my-color');
+        // }
+
+        target.classList.toggle('my-color')
 
     }
 
