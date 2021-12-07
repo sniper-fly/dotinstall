@@ -78,18 +78,24 @@
     //     console.log(e.key);
     // })
 
-    const textarea = document.querySelector('textarea');
-    textarea.addEventListener('focus', () => {
-        console.log('focus');
-    })
-    textarea.addEventListener('blur', () => {
-        console.log('blur');
-    })
-    textarea.addEventListener('input', () => {
-        console.log('input');
-        console.log(textarea.value.length);
-    })
-    textarea.addEventListener('change', () => {
-        console.log('change');
+    // const textarea = document.querySelector('textarea');
+    // textarea.addEventListener('focus', () => {
+    //     console.log('focus');
+    // })
+    // textarea.addEventListener('blur', () => {
+    //     console.log('blur');
+    // })
+    // textarea.addEventListener('input', () => {
+    //     console.log('input');
+    //     console.log(textarea.value.length);
+    // })
+    // textarea.addEventListener('change', () => {
+    //     console.log('change');
+    // })
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log('aaa');
     })
 }
