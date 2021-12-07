@@ -18,8 +18,8 @@
         //     target.classList.add('my-color');
         // }
 
-        target.classList.toggle('my-color')
-
+        // target.classList.toggle('my-color')
+        target.textContent = target.dataset.translation;
     }
 
     document.querySelector('button').addEventListener('click', update);
