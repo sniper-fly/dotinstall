@@ -26,11 +26,21 @@
         // const ul = document.querySelector('ul');
         // ul.appendChild(item);
 
-        const item = document.querySelectorAll('li')[0];
-        const copy = item.cloneNode(true);
-        const ul = document.querySelector('ul');
-        const insert_place = document.querySelectorAll('li')[2];
-        ul.insertBefore(copy, insert_place);
+        // const item = document.querySelectorAll('li')[0];
+        // const copy = item.cloneNode(true);
+        // const ul = document.querySelector('ul');
+        // const insert_place = document.querySelectorAll('li')[2];
+        // ul.insertBefore(copy, insert_place);
+
+        const new_item = document.createElement('li');
+        const input = document.querySelector('input');
+        new_item.textContent = input.value;
+
+        const insertNode = document.querySelector('ul');
+        insertNode.appendChild(new_item);
+
+        input.value = '';
+        insertNode.focus();
     }
 
     document.querySelector('button').addEventListener('click', update);
