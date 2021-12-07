@@ -19,7 +19,12 @@
         // }
 
         // target.classList.toggle('my-color')
-        target.textContent = target.dataset.translation;
+        // target.textContent = target.dataset.translation;
+
+        const item = document.createElement('li');
+        item.textContent = 'item3';
+        const ul = document.querySelector('ul');
+        ul.appendChild(item);
     }
 
     document.querySelector('button').addEventListener('click', update);
