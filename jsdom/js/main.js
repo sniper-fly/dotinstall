@@ -65,16 +65,31 @@
 
     // document.querySelector('button').addEventListener('click', update);
 
-    document.querySelector('button').addEventListener('dblclick', () => {
-        console.log("double clicked!");
-    });
+    // document.querySelector('button').addEventListener('dblclick', () => {
+    //     console.log("double clicked!");
+    // });
 
     // document.addEventListener('mousemove', e => {
     //     // console.log("moved");
     //     console.log(e.clientX, e.clientY);
     // })
 
-    document.addEventListener('keydown', e => {
-        console.log(e.key);
+    // document.addEventListener('keydown', e => {
+    //     console.log(e.key);
+    // })
+
+    const textarea = document.querySelector('textarea');
+    textarea.addEventListener('focus', () => {
+        console.log('focus');
+    })
+    textarea.addEventListener('blur', () => {
+        console.log('blur');
+    })
+    textarea.addEventListener('input', () => {
+        console.log('input');
+        console.log(textarea.value.length);
+    })
+    textarea.addEventListener('change', () => {
+        console.log('change');
     })
 }
