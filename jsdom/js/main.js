@@ -93,9 +93,15 @@
     //     console.log('change');
     // })
 
-    const form = document.querySelector('form');
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        console.log('aaa');
+    // const form = document.querySelector('form');
+    // form.addEventListener('submit', e => {
+    //     e.preventDefault();
+    //     console.log('aaa');
+    // })
+
+    document.querySelector('ul').addEventListener('click', e => {
+        if (e.target.nodeName === 'LI') {
+            e.target.classList.toggle('done');
+        }
     })
 }
