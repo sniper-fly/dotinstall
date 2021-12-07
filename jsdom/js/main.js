@@ -32,15 +32,22 @@
         // const insert_place = document.querySelectorAll('li')[2];
         // ul.insertBefore(copy, insert_place);
 
-        const new_item = document.createElement('li');
-        const input = document.querySelector('input');
-        new_item.textContent = input.value;
+        // const new_item = document.createElement('li');
+        // const input = document.querySelector('input');
+        // new_item.textContent = input.value;
+
+        // const insertNode = document.querySelector('ul');
+        // insertNode.appendChild(new_item);
+
+        // input.value = '';
+        // insertNode.focus();
+
+        const color = document.querySelector('select');
+        const li = document.createElement('li');
+        li.textContent = `${color.value} : ${color.selectedIndex}`
 
         const insertNode = document.querySelector('ul');
-        insertNode.appendChild(new_item);
-
-        input.value = '';
-        insertNode.focus();
+        insertNode.appendChild(li);
     }
 
     document.querySelector('button').addEventListener('click', update);
