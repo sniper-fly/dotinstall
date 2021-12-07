@@ -21,10 +21,16 @@
         // target.classList.toggle('my-color')
         // target.textContent = target.dataset.translation;
 
-        const item = document.createElement('li');
-        item.textContent = 'item3';
+        // const item = document.createElement('li');
+        // item.textContent = 'item3';
+        // const ul = document.querySelector('ul');
+        // ul.appendChild(item);
+
+        const item = document.querySelectorAll('li')[0];
+        const copy = item.cloneNode(true);
         const ul = document.querySelector('ul');
-        ul.appendChild(item);
+        const insert_place = document.querySelectorAll('li')[2];
+        ul.insertBefore(copy, insert_place);
     }
 
     document.querySelector('button').addEventListener('click', update);
